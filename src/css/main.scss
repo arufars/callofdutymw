@@ -556,3 +556,18 @@ header {
         }
     }
 }
+@media only screen and(max-width: 880px) {
+    .map-img {
+        .img-map {
+            background-position-x: -700px;
+            background-position-y: 20px;
+           
+        }
+        .map-text {
+            transform: translate(-30%, -10%);
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}

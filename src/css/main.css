@@ -945,4 +945,18 @@ header .navbar {
             transform: translateX(-35%);
   }
 }
+
+@media only screen and (max-width: 880px) {
+  .map-img .img-map {
+    background-position-x: -700px;
+    background-position-y: 20px;
+  }
+  .map-img .map-text {
+    -webkit-transform: translate(-30%, -10%);
+            transform: translate(-30%, -10%);
+  }
+  .map-img .map-text h2 {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
