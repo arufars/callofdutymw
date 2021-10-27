@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 1500px;
+  height: 3500px;
 }
 
 header {
@@ -686,7 +686,8 @@ header .navbar {
 }
 
 #plat {
-  padding-top: 4em;
+  position: relative;
+  padding: 8em 0;
   background: #000000;
 }
 
@@ -714,6 +715,7 @@ header .navbar {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 3em 0;
+  padding-bottom: 2em;
 }
 
 .os-team .os {
@@ -790,6 +792,157 @@ header .navbar {
   .os-team .os {
     width: 300px;
     height: 300px;
+  }
+}
+
+.change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 4%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.change .change-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.change label {
+  margin-left: 10px;
+}
+
+.change label .cod, .change label .ice-cream {
+  position: relative;
+  background: transparent;
+  color: #dbdbdb;
+  border: none;
+}
+
+.change label .cod::before, .change label .ice-cream::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  background: red;
+}
+
+.change label .cod option, .change label .ice-cream option {
+  color: black;
+  background: transparent;
+}
+
+.result, .hasil {
+  color: white;
+  font-size: 14px;
+}
+
+.map {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 2em;
+  background: black;
+}
+
+.map-img {
+  position: relative;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100vh;
+}
+
+.map-img .img-map {
+  background: url("/img/soldier.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position-x: -60px;
+  width: 100%;
+  height: 100%;
+}
+
+.map-img .map-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 40%;
+  left: 40%;
+  -webkit-transform: translate(-30%, -10%);
+          transform: translate(-30%, -10%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  z-index: 5;
+}
+
+.map-img .map-text h2 {
+  -webkit-filter: drop-shadow(2px 2px 10px #000000);
+          filter: drop-shadow(2px 2px 10px #000000);
+  color: white;
+  letter-spacing: 3px;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  line-height: 50px;
+}
+
+.btn.map {
+  margin-top: 1em;
+  background: transparent;
+  padding: 8px 100px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+@media only screen and (min-width: 1440px) {
+  .map-img {
+    width: 50%;
+    height: 85vh;
+    background-position-x: -60px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .map-img {
+    width: 100%;
+    height: 100%;
+  }
+  .map-img .img-map {
+    width: 100%;
+    height: 90vh;
+    background-position-x: -450px;
+    background-position-y: 80px;
+  }
+  .map-img .map-text {
+    left: 38%;
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
   }
 }
 /*# sourceMappingURL=main.css.map */
