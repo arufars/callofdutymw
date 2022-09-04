@@ -1,4 +1,5 @@
-# call of duty mw
-CloneCallofDuty, https://callofdutymw2019.netlify.app/
+# CAll OF DUTY MODERN WARFARE 2018
+
+Website Clone
 
 === Reload Page 5X agar dapat melihat video tersebut ===
