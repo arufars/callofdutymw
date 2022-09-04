@@ -16,7 +16,7 @@ body {
   font-family: $Pop;
 }
 
-// Nav
+/* Nav */
 header {
   position: relative;
   width: 100%;
@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // height: 40px;
+     height: 40px;
   }
 }
 .logo {
