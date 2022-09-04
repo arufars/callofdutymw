@@ -7,6 +7,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
+  "engines": {
+    "node": "v16.15.0"
+  },
   "repository": "git@github.com:Marineux/callofdutymw.git",
   "author": "Marineux <firselee@gmail.com>",
   "license": "MIT",
